@@ -11,7 +11,9 @@ mongoose.connect(
 );
 
 app.use("/", require("./routes/noteRoute"));
-
-app.listen(80, function () {
+app.get("/", (req, res) => {
+  res.send("hello world");
+});
+app.listen(443, function () {
   console.log("express server is running on port 5001");
 });
