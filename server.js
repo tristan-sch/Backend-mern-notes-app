@@ -14,6 +14,6 @@ app.use("/", require("./routes/noteRoute"));
 app.get("/", (req, res) => {
   res.send("hello world");
 });
-app.listen(443, function () {
-  console.log("express server is running on port 5001");
+app.listen(8080, function () {
+  console.log("express server is running on port 8080");
 });
